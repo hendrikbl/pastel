@@ -8,11 +8,12 @@
 
     <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
 
+    {!! get_css_link_tag('normalize', 'screen') !!}
     {!! get_css_link_tag('style', 'screen') !!}
     {!! get_css_link_tag('print', 'print') !!}
     {!! get_js_script_tag('all') !!}
 
-    {!! get_css_link_tag('highlight-darcula') !!}
+    {!! get_css_link_tag('highlight-tomorrow-night-eighties') !!}
     {!! get_js_script_tag('highlight.pack') !!}
     <script>hljs.initHighlightingOnLoad();</script>
 
