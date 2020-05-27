@@ -8,7 +8,7 @@ Pastel is a PHP tool to generate beautiful documentation from Markdown. [Here's 
   <img src="./screenshots/pastel-screenshot-1.png">
 </p>
 
-This project is a fork of [Documentarian](https://github.com/knuckleswtf/pastel), which is itself a PHP port of [Slate](https://github.com/slatedocs/slate), the API documentation tool.
+This project was forked from [Documentarian](https://github.com/knuckleswtf/pastel), which is itself a PHP port of [Slate](https://github.com/slatedocs/slate), the API documentation tool.
 
 ## Table of contents
 - [Installation](#installation)
@@ -20,7 +20,7 @@ This project is a fork of [Documentarian](https://github.com/knuckleswtf/pastel)
 
 ## Installation
 ```bash
-composer require knuckleswtf/pastel
+composer require --dev knuckleswtf/pastel
 ```
  
 ## Usage
@@ -30,9 +30,9 @@ Pastel is like Documentarian and Slate, but simpler and with a somewhat differen
 Start off with a single Markdown file. There are two parts:
 
 #### The content
-Your Markdown file should contain your docs, written as you like. There's no set format, but you can start with an introduction, talk about authentication and any general details, then describe each endpoint in its own section. Write example requests and responses using code blocks, use tables to describe request and response parameters.
+Your Markdown file should contain your docs, written as you like. There's no set format, but you can start with an introduction, talk about authentication and any general details, then describe each endpoint in its own section. Write example requests and responses using code blocks, use tables or paragraphs to describe request and response parameters.
  
- There's a good example in the included example Markdown ([stubs/index.md](./stubs/index.md)) and the resulting HTML output ([docs/index.html](./docs/index.html)).
+There's a good example in the included example Markdown ([stubs/index.md](./stubs/index.md)) and the resulting HTML output ([docs/index.html](./docs/index.html)).
 
 For a full explanation of the supported Markdown syntax, see [How to Edit Slate Markdown files](https://github.com/slatedocs/slate/wiki/Markdown-Syntax)
 
@@ -140,9 +140,11 @@ You can help your lower-level headings stand out by using the `fancy-heading-pan
 
 ![](./screenshots/fancy-headings.png)
 
+#### Notes and Warnings
+You can add little highlighted warnings and notes using the `<aside>` tag and either of the classes "notice", "warning", or "success".
 
 ## You might also like...
-- [laravel-apidoc-generator](https://github.com/mpociot/laravel-apidoc-generator): Generate documentation for your Laravel APIs from your codebase. Built by the creator of Documentarian and maintained by the creator of Pastel. Powered by Pastel (soon).
+- [Scribe](https://github.com/knuckleswtf/scribe): Generate documentation for your Laravel APIs from your codebase. Powered by Pastel.
 
 ## Todo
 - Custom favicon support
